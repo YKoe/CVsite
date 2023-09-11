@@ -1,0 +1,73 @@
+/* Colors:
+Charcoal  424651
+Tangerine F7996E
+Ash gray  B6C9BB
+Indigo    9984D4
+Violet    9F87AF
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+*
+{
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 45px 100px;
+    background: linear-gradient(to top, #424651,  #31343d);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    border-bottom: 1px solid #F7996E;
+}
+
+body
+{
+    background-color: #424651;
+}
+
+.logo 
+{
+    color: white;
+    user-select: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 3px solid #F7996E;
+    border-right: 3px solid #F7996E;
+    cursor: pointer;
+}
+
+.logo:hover
+{
+    border-left: 3px solid #3E92CC;
+    border-right: 3px solid #3E92CC;
+}
+
+.navigation button
+{
+    background: none;
+    border: 3px solid #F7996E;
+    text-decoration: none;
+    position: relative;
+    padding: 16px 28px;
+    color: white;
+    border-radius: 8px;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+.navigation button:hover
+{
+    color: #3E92CC;
+    border: 3px solid #3E92CC;
+}
