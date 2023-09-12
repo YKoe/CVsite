@@ -22,7 +22,8 @@ header
     top: 0;
     left: 0;
     width: 100%;
-    padding: 45px 100px;
+    height: 100px;
+    padding: 90px;
     background: linear-gradient(to top, #424651,  #31343d);
     display: flex;
     justify-content: space-between;
@@ -45,10 +46,13 @@ body
     border-left: 3px solid #F7996E;
     border-right: 3px solid #F7996E;
     cursor: pointer;
+    transition-duration: 0.4s;
 }
 
 .logo:hover
 {
+    padding-left: 40px;
+    padding-right: 40px;
     border-left: 3px solid #3E92CC;
     border-right: 3px solid #3E92CC;
 }
@@ -59,15 +63,68 @@ body
     border: 3px solid #F7996E;
     text-decoration: none;
     position: relative;
-    padding: 16px 28px;
+    padding: 16px;
+    width: 160px;
     color: white;
     border-radius: 8px;
     margin-left: 60px;
     cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.navigation button span::after
+{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    right: 10px;
+    top: 10;
+    transition: 0.5s;
 }
 
 .navigation button:hover
 {
+    padding-right: 25px;
     color: #3E92CC;
     border: 3px solid #3E92CC;
+}
+
+.navigation button:hover span::after
+{
+    opacity: 1;
+    right: 40px;
+}
+
+.profile
+{
+    display: flex;
+    width: 100%;
+    margin-top: 180px
+}
+
+.pic
+{
+    width: 30%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt
+{
+    width: 70%;
+    height: 600px;
+}
+
+img
+{
+    height: 70%;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+img:hover
+{
+    height: 80%;
 }
